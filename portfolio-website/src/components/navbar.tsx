@@ -7,11 +7,11 @@ const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false); // State to toggle the mobile menu
 
     return (
-        <nav className="bg-gray-800 text-white">
+        <nav className="navbar">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
             {/* Logo */}
             <Link legacyBehavior href="/">
-            <a className="text-xl font-bold">MyWebsite</a>
+            <a className="text-xl font-black">LS/</a>
             </Link>
 
             {/* Hamburger Icon (for mobile) */}
@@ -34,17 +34,22 @@ const Navbar: React.FC = () => {
             >
             <li>
                 <Link legacyBehavior href="/">
-                <a className="hover:text-blue-400">Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link legacyBehavior href="/about">
                 <a className="hover:text-blue-400">About</a>
                 </Link>
             </li>
             <li>
+                <Link legacyBehavior href="/about">
+                <a className="hover:text-blue-400">Resume</a>
+                </Link>
+            </li>
+            <li>
                 <Link legacyBehavior href="/projects">
-                <a className="hover:text-blue-400">Projects</a>
+                <a className="hover:text-blue-400">Portfolio</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/contact">
+                <a className="hover:text-blue-400">More</a>
                 </Link>
             </li>
             <li>
