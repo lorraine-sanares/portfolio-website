@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
                 <p>Melbourne</p>
 
                 {/* Social Icons */}
-                    
+
 
             </div>
             {/* Spacer */}
@@ -69,12 +69,9 @@ const Hero: React.FC = () => {
                     {/* Divider */}
                     <div className="border-l border-black h-full mx-4 -mt-10"></div>
 
-
-
                 </div>
             </div>
         </div>
-
       </section>
     );
   };
