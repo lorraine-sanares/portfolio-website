@@ -1,5 +1,7 @@
 import React from "react";
 
+// NEED TO FIND A WAY TO REMOVE CONSTANT WIDTHS AND HEIGHTS
+
 const Hero: React.FC = () => {
     return (
       <section       
@@ -11,12 +13,12 @@ const Hero: React.FC = () => {
       className="relative w-full h-auto bg-norepeat text-white">
         
         {/* Hero Content */}
-        <div className="container mx-auto flex flex-row items-center justify-center min-h-screen px-6 text-center">  
+        <div className="flex flex-row items-center justify-start w-full h-screen p-20">  
             {/* Text Container */}
-            <div className="container mx-auto flex flex-col items-start justify-center min-h-screen px-6 text-center -mt-40">  
+            <div className="flex flex-col items-start justify-start w-1/2 h-auto px-14 -mt-40">  
                 {/* Heading */}
-                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4">
-                    Hi, I'm Lorraine
+                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
+                    Hi, I'm Lorraine 👋
                 </h1>
                 {/* Subheading */}
                 <p className="text-lg sm:text-xl text-white-400 mb-6 text-left">
@@ -25,21 +27,19 @@ const Hero: React.FC = () => {
                 advanced visualisations.
                 </p>
         
-                {/* Call-to-Action Button */}
-                <a
-                    href="#about"
-                    className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition duration-300"
-                >
-                    Learn More About Me
-                </a>
+                {/* Location */}
+                <p>Melbourne</p>
+
+                {/* Social Icons */}
+                    
+
             </div>
             {/* Spacer */}
-            <div className="container w-50"></div>
+            <div className="container w-1/6"></div>
 
             {/* Photo container */}
-            <div className="flex flex-col items-center justify-center mb-8 -mt-40">
-                <div className="w-40 h-40 rounded-full bg-white backdrop-blur-md bg-opacity-85"></div>
-            </div>
+            <div className="w-[350] h-[350] rounded-full bg-white backdrop-blur-md bg-opacity-75 -mt-60"></div>
+
         </div>
 
         {/* About Content */}
@@ -52,34 +52,28 @@ const Hero: React.FC = () => {
                 </h1>
 
                 {/* Content Container */}
-                <div className="flex flex-row items-center justify-center">
-                    {/* Subheading */}
+                <div className="flex flex-row w-1/2 h-full items-center justify-start">
+                    {/* About Summary */}
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">
                     Hi, I’m Lorraine Sanares. I’m a Student, Writer and Content
-                    Creator based in Melbourne, Australia.
-
+                    Creator based in Melbourne, Australia. <br />
+                    <br />
                     As third-year Bachelor of Science student majoring in Data 
                     Science at the University of Melbourne, I specialize in 
                     extracting powerful and impacful insights from data; 
                     implementing advanced techniques in Python, SQL and 
                     Machine Learning. I use a wide range of visualisation tools 
-                    to create beautiful and user-friendly visualisations.
+                    to create beautiful and user-friendly visualisations. 
                     </p>
 
                     {/* Divider */}
+                    <div className="border-l border-black h-full mx-4 -mt-10"></div>
 
-                    
+
 
                 </div>
-
-
-
             </div>
         </div>
-
-
-
-
 
       </section>
     );
