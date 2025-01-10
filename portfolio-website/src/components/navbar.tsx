@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="navbar">
-        <div className="container mx-auto flex items-center justify-between px-4 py-3">
+        <div className="container mx-auto flex items-center justify-between px-4 py-3 h-14">
             {/* Logo */}
             <Link legacyBehavior href="/">
             <a className="text-xl font-black">LS/</a>
