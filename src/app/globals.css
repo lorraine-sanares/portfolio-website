@@ -25,3 +25,7 @@ body {
 .navbar {
   background-color: #030712;
 }
+
+* {
+  cursor: url('/assets/cursor.png'), auto;
+}
