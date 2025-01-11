@@ -22,12 +22,16 @@ const Experience: React.FC = () => {
                     <div className="container w-1/2"></div>
 
                     {/* y-axis line */}
-                    <div className="flex flex-col items-center justify-center h-screen ml-40">
-                        {/* Square, Line & Dots */}
+                    <div className="flex flex-col items-center justify-center h-screen ">
+                        {/* Square*/}
                         <div className="w-[50px] h-[50px] rounded-xl bg-white bg-opacity-80"></div>
-                        <div className="border-l border-white h-full -mt-4"></div>
 
-
+                        {/* Line with dots */}
+                        <div className="relative border-l border-white h-full">
+                            <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[20px] h-[20px] rounded-full bg-white"></div>
+                            <div className="absolute top-40 left-1/2 -translate-x-1/2 w-[20px] h-[20px] rounded-full bg-white"></div>
+                            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[20px] h-[20px] rounded-full bg-white"></div>
+                        </div>
                     </div>
 
                     {/* Experience Cards Container */}
