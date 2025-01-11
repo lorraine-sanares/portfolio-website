@@ -36,11 +36,9 @@ const About: React.FC = () => {
                     Hi, I’m Lorraine Sanares. I’m a Student, Writer and Content
                     Creator based in Melbourne, Australia.
                     </p>
-
                 </div>
             </div>
         </div>
     );
 };
-
 export default About; 

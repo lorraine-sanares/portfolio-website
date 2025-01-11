@@ -55,8 +55,8 @@ const Hero: React.FC = () => {
                 <div className="flex flex-row w-1/2 h-full items-center justify-start">
                     {/* About Summary */}
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">
-                    Hi, I’m Lorraine Sanares. I’m a Student, Writer and Content
-                    Creator based in Melbourne, Australia. <br />
+                    Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
+                    Data Scientist based in Melbourne, Australia. <br />
                     <br />
                     As third-year Bachelor of Science student majoring in Data 
                     Science at the University of Melbourne, I specialize in 
