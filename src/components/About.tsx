@@ -1,4 +1,5 @@
 // Doesn't work, image gets cut off
+// make photo cicle size dynamic
 
 import React from "react";
 

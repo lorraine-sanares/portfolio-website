@@ -1,0 +1,4 @@
+// make photo circle size dynamically to screen size 
+// add float in animations to headings
+// add grow animations when mouse hovers over cards
+// add parallax to image elements
