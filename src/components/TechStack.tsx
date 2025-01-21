@@ -35,12 +35,26 @@ const TechStack: React.FC = () => {
                     
                     {/* Row 1 */}
                     <div className="flex flex-row items-start justify-start w-full h-auto gap-10">
-                        {/* Tech Squares */}
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
+                        {/* Python */}
+                        <div className="relative flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <img src="/python.png" alt="Overlay" className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl p-3"/>
+                        </div>
+                        {/* C */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <img src="/c.png" alt="Overlay" className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl p-3"/>
+                        </div>
+                        {/* R */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <img src="/R_logo.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                        </div>
+                        {/* HTML */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <img src="/html.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                        </div>
+                        {/* CSS */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <img src="/css.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                        </div>
                     </div>
                     <div className="h-20"></div>
 
@@ -54,7 +68,7 @@ const TechStack: React.FC = () => {
                         <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
                     </div>
                     <div className="h-20"></div>
-                    
+
                     {/* Row 3 */}
                     <div className="flex flex-row items-start justify-start w-full h-auto gap-10">
                         {/* Tech Squares */}
