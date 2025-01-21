@@ -16,11 +16,11 @@ const Hero: React.FC = () => {
             <div className="container mx-auto flex flex-col items-start justify-start w-[550] h-auto px-6 -mt-40">  
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
-                    Hi, I'm Lorraine
+                    Hi, I&apos;m Lorraine
                 </h1>
                 {/* Subheading */}
                 <p className="text-lg sm:text-xl text-white-400 mb-6 text-left">
-                I'm a Data Science student at the University of Melbourne with a 
+                I&apos;m a Data Science student at the University of Melbourne with a 
                 focus on performing data analysis, machine learning and creating 
                 advanced visualisations.
                 </p>

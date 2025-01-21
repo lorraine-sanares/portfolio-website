@@ -5,7 +5,7 @@ const Doing: React.FC = () => {
         <div className="flex flex-col items-start justify-start w-full h-auto p-16">  
             {/* Heading */}
             <h2 className="text-4xl sm:text-4xl font-extrabold mb-4 text-white">
-                    What I'm Doing
+                    What I&apos;m Doing
             </h2>
             <div className="container h-10"></div>
             {/* Cards Container */} 
