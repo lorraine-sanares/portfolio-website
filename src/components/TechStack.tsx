@@ -18,7 +18,6 @@ const TechStack: React.FC = () => {
                         Tech Stack
                 </h1>
 
-                f
                 <div className="flex flex-col items-start justify-start w-1/2 h-auto">
                     <p>
                     On top of building my proficiency in programming languages for analytics 
@@ -32,57 +31,82 @@ const TechStack: React.FC = () => {
                 <div className="h-20"></div>
 
                 {/* Language Squares */}
-                <div className="flex flex-col items-start justify-start w-1/2 h-auto">
+                <div className="flex flex-col items-start justify-start w-full h-auto">
                     
                     {/* Squares Row 1 */}
-                    <div className="flex flex-row items-start justify-start w-full h-auto gap-10">
+                    <div className="flex flex-row items-start justify-between w-3/5 h-auto gap-10">
                         {/* Python */}
                         <div className="relative flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
-                            <Image src="/python.png" alt="Overlay" className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl p-3"/>
+                            <Image src="/python.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
                         </div>
                         {/* C */}
                         <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
-                            <Image src="/c.png" alt="Overlay" className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl p-3"/>
+                            <Image src="/c.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
                         </div>
                         {/* R */}
                         <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
-                            <Image src="/R_logo.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                            <Image src="/R_logo.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
                         </div>
                         {/* HTML */}
                         <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
-                            <Image src="/html.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                            <Image src="/html.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
                         </div>
                         {/* CSS */}
                         <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
-                            <Image src="/css.png" alt="Overlay" className="absolute top-0 left-0 object-cover rounded-3xl p-3"/>
+                            <Image src="/css.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
                         </div>
                     </div>
                     <div className="h-20"></div>
 
-                    {/* Row 2 */}
-                    <div className="flex flex-row items-start justify-start w-full h-auto gap-10">
-                        {/* Tech Squares */}
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
+                    {/* Squares Row 2 */}
+                    <div className="flex flex-row items-start justify-between w-3/5 h-auto gap-10">
+                        {/* JavaScript */}
+                        <div className="relative flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/javascript.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* TypeScript */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/typescript.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* Tailwind */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/tailwind.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* HTML */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/react.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* CSS */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/wordpress.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3 scale-150"/>
+                        </div>
                     </div>
                     <div className="h-20"></div>
 
-                    {/* Row 3 */}
-                    <div className="flex flex-row items-start justify-start w-full h-auto gap-10">
-                        {/* Tech Squares */}
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
-                        <div className="flex flex-col w-[100] h-[100] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"></div>
+                    {/* Squares Row 3 */}
+                    <div className="flex flex-row items-start justify-between w-3/5 h-auto gap-10">
+                        {/* AWS */}
+                        <div className="relative flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/aws.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* MySql */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/mysql.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* Postgres */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/postgres.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* Kafka */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/kafka.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
+                        {/* Apache Spark */}
+                        <div className="flex flex-col w-[100] h-[100] rounded-2xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
+                            <Image src="/apachespark.png" alt="Overlay" fill style={{ objectFit: "contain" }} className="absolute top-0 left-0 rounded-3xl p-3"/>
+                        </div>
                     </div>                    
-
-
                 </div>
-
             </div> 
         </section>
     );

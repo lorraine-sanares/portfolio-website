@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
             console.log("Circle Positions:", positions); // Debugging the calculated circle positions
             setCirclePositions(positions);
         }
-    }, [cardRefs]);
+    }, []);
 
     return (
         <section
