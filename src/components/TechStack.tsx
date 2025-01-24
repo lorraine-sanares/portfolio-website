@@ -122,9 +122,6 @@ const TechStack: React.FC = () => {
                         Tensor Flow
                     </p>
                 </div>
-
-                <div className="h-500"></div>
-
             </div> 
         </section>
     );

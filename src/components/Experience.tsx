@@ -29,6 +29,7 @@ const Experience: React.FC = () => {
                 backgroundImage: "url('/assets/stack.png')",
                 backgroundSize: "150%",
                 backgroundPosition: "130% 25%",
+                backgroundRepeat: "no-repeat", 
             }}
             className="relative w-full h-auto text-white"
         >
@@ -62,7 +63,7 @@ const Experience: React.FC = () => {
                     </div>
 
                     {/* Experience Cards */}
-                    <div className="flex flex-col items-start justify-start w-auto h-screen p-16 gap-8">
+                    <div className="flex flex-col items-start justify-start w-auto h-auto p-16 gap-8">
                         <div
                             ref={cardRefs[0]}
                             className="flex flex-col w-[600px] h-[350px] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
@@ -92,8 +93,12 @@ const Experience: React.FC = () => {
                                 Nov. 2024 - Dec. 2024
                             </p>
                         </div>
+                        
                     </div>
+                    
                 </div>
+                
+
             </div>
         </section>
     );
