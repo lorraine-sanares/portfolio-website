@@ -5,8 +5,8 @@ import Doing from "@/components/Doing";
 import Experience from "@/components/Experience";
 import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
-
-
+import More from "@/components/More";
+import Datasci from "@/components/Datasci";
 
 export default function Page() {
   return (
@@ -17,6 +17,8 @@ export default function Page() {
       <Experience />
       <TechStack />
       <Projects />
+      <Datasci />
+      <More />
     </main>
   );
 }
