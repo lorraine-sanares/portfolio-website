@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
             }}
             className="relative w-full h-auto text-white"
         >
-            <div className="flex flex-col items-start justify-start w-full h-auto p-16">
+            <div className="flex flex-col items-start justify-start w-full h-auto pl-28">
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
                     Work Experience

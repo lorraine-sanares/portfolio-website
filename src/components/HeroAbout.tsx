@@ -17,18 +17,20 @@ const Hero: React.FC = () => {
             {/* Text Container */}
             <div className="flex flex-col items-start justify-start w-1/2 h-auto px-14 -mt-40">  
                 {/* Heading */}
-                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
-                    Hi, I&apos;m Lorraine 👋
-                </h1>
+                <h2 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
+                    Hi there! I&apos;m Lorraine 👋
+                </h2>
                 {/* Subheading */}
-                <p className="text-lg sm:text-xl text-white-400 mb-6 text-left">
-                I&apos;m a Data Science student at the University of Melbourne with a 
-                focus on performing data analysis, machine learning and creating 
-                advanced visualisations.
+                <p className="text-s sm:text-s text-white-400 mb-6 text-left">
+                Let&apos;s cut to the chase; I like to make cool sh*t. I&apos;ve 
+                always been someone who feels restless when idle and don&apos;t 
+                have my hands on a project. As a person of many interests; it is 
+                my mission acquire skills, to find the perfect blend of it all 
+                (my ikigai) and share my learnings along the way.  
                 </p>
         
                 {/* Location */}
-                <p>Melbourne</p>
+                <p>So, are you intriged? Let&apos;s get started then!</p>
 
                 {/* Social Icons */}
 
@@ -43,7 +45,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* About Content */}
-        <div className="flex flex-col items-center justify-center mb-8 -mt-40 p-16">
+        <div className="flex flex-col items-center justify-center mb-8 -mt-40 p-28">
             {/* About Card */}
             <div className="flex flex-col w-full h-[600] rounded-3xl bg-white p-16 text-start bg-opacity-80 backdrop-blur-md">
                 {/* Heading */}
@@ -54,7 +56,7 @@ const Hero: React.FC = () => {
                 {/* Content Container */}
                 <div className="flex flex-row w-1/2 h-full items-center justify-start">
                     {/* About Summary */}
-                    <p className="text-lg sm:text-xl text-black mb-6 text-left">
+                    <p className="text-lg sm:text-m text-black mb-6 text-left">
                     Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
                     Data Scientist based in Melbourne, Australia. <br />
                     <br />

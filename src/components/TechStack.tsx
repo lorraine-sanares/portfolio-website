@@ -6,13 +6,14 @@ const TechStack: React.FC = () => {
         <section
         style={{
             backgroundImage: "url('/assets/balance.png')",
-            backgroundSize: "65%",
-            backgroundPosition: "100% 35%",
+            backgroundSize: "60%",
+            backgroundPosition: "100% 60%",
             backgroundRepeat: "no-repeat", 
+            backgroundAttachment: "local", 
         }}
         className="relative w-full h-auto text-white">
 
-            <div className="flex flex-col items-start justify-start w-full h-auto p-16">
+            <div className="flex flex-col items-start justify-start w-full h-auto p-28">
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
                         Tech Stack
@@ -117,10 +118,11 @@ const TechStack: React.FC = () => {
                     Libraries
                 </h1>
 
-                <div className="flex flex-col items-start justify-start w-1/2 h-auto">
+                <div className="flex flex-col items-start justify-start w-1/2 h-full">
                     <p>
                         Tensor Flow
                     </p>
+                    <div className="h-80"></div> {/* Spacer */}
                 </div>
             </div> 
         </section>

@@ -2,10 +2,13 @@ import React from "react";
 
 const Doing: React.FC = () => {
     return (
-        <div className="flex flex-col items-start justify-start w-full h-auto p-16">  
+        <div className="flex flex-col items-start justify-start w-full h-auto p-28">  
+            
+            
+            
             {/* Heading */}
-            <h2 className="text-4xl sm:text-4xl font-extrabold mb-4 text-white">
-                    What I&apos;m Doing
+            <h2 className="text-6xl sm:text-4xl font-extrabold mb-4 text-white">
+                    My Journey to Data Science.
             </h2>
             <div className="container h-10"></div>
             {/* Cards Container */} 
