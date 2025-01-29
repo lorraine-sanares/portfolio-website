@@ -28,22 +28,29 @@ const More: React.FC = () => {
                     {/* Study Card */}
                     <div className="flex flex-col w-1/3 h-[400] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                         {/* Text */}
-                        <div className="text-4xl sm:text-4xl font-bold text-black">Marathon</div>
+                        <div className="text-4xl sm:text-2xl font-bold text-black">My Marathon Training</div>
                         <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
                     </div>
 
                     {/* Coding Card */}
                     <div className="flex flex-col w-1/3 h-[400] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                         {/* Text */}
-                        <div className="text-4xl sm:text-4xl font-bold text-black">Women in Tech</div>
-                        <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
+                        <div className="text-4xl sm:text-2xl font-bold text-black">Women in Tech</div>
+                        <p className="text-lg sm:text-md text-black mb-6 text-left">
+                            I love teaching and learning. Hence, my role as an Education
+                            Director for WIT Unimelb allows me to combine the two passions. <br />
+                            <br />
+                            Check out some of the workshops I run!
+                        </p>
                     </div>
                     
                     {/* Writing Card */}
                     <div className="flex flex-col w-1/3 h-[400] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                         {/* Text */}
-                        <div className="text-4xl sm:text-4xl font-bold text-black">Resources</div>            
-                        <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
+                        <div className="text-4xl sm:text-2xl font-bold text-black">Resources</div>            
+                        <p className="text-lg sm:text-xl text-black mb-6 text-left">
+                            
+                        </p>
                     </div>                
                 </div>
 

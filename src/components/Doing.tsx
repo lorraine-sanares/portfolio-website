@@ -8,7 +8,7 @@ const Doing: React.FC = () => {
             
             {/* Heading */}
             <h2 className="text-6xl sm:text-4xl font-extrabold mb-4 text-white">
-                    My Journey to Data Science.
+                    What I Do
             </h2>
             <div className="container h-10"></div>
             {/* Cards Container */} 
@@ -16,21 +16,21 @@ const Doing: React.FC = () => {
                 {/* Study Card */}
                 <div className="flex flex-col w-1/3 h-[350] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                     {/* Text */}
-                    <div className="text-4xl sm:text-4xl font-bold text-black">Studying</div>
+                    <div className="text-4xl sm:text-4xl font-bold text-black">Study</div>
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
                 </div>
 
                 {/* Coding Card */}
                 <div className="flex flex-col w-1/3 h-[350] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                     {/* Text */}
-                    <div className="text-4xl sm:text-4xl font-bold text-black">Coding</div>
+                    <div className="text-4xl sm:text-4xl font-bold text-black">Code</div>
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
                 </div>
                 
                 {/* Writing Card */}
                 <div className="flex flex-col w-1/3 h-[350] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                     {/* Text */}
-                    <div className="text-4xl sm:text-4xl font-bold text-black">Writing</div>            
+                    <div className="text-4xl sm:text-4xl font-bold text-black">Write</div>            
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
                 </div>                
             </div>
