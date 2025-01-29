@@ -7,6 +7,7 @@ import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import More from "@/components/More";
 import Datasci from "@/components/Datasci";
+import Contact from "@/components/Contact";
 
 export default function Page() {
   return (
@@ -19,6 +20,8 @@ export default function Page() {
       <Projects />
       <Datasci />
       <More />
+      <Contact />
+
     </main>
   );
 }

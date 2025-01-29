@@ -11,9 +11,9 @@ const TechStack: React.FC = () => {
             backgroundRepeat: "no-repeat", 
             backgroundAttachment: "local", 
         }}
-        className="relative w-full h-auto text-white">
+        className="relative w-full min-h-[150vh] text-white">
 
-            <div className="flex flex-col items-start justify-start w-full h-auto p-28">
+            <div className="flex flex-col items-start justify-start w-full min-h-[150vh] p-28">
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
                         Tech Stack

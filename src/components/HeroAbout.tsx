@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         backgroundSize: "210%",
         backgroundPosition: "45% 48%",
       }}
-      className="relative w-full h-auto bg-norepeat text-white">
+      className="relative w-full min-h-[150vh] bg-norepeat text-white">
         
         {/* Hero Content */}
         <div className="flex flex-row items-center justify-start w-full h-screen p-20">  
