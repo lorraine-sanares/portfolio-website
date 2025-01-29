@@ -12,18 +12,23 @@ const Contact: React.FC = () => {
                 backgroundRepeat: "no-repeat", 
                 // backgroundAttachment: "local",
             }}
-            className="w-full h-screen bg-[#030712] text-white py-16 px-6 flex flex-col items-center justify-center gap-10">
+            className="w-full h-screen bg-[#030712] text-white py-16 px-6 flex flex-col items-center justify-center">
             
             {/* Section Title */}
-            <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 text-center">
+            <h1 className="text-4xl sm:text-6xl font-extrabold mb-8 text-center">
                 Get in touch
             </h1>
+            <p className="text-lg sm:text-md mb-8 text-center text-white w-full max-w-2xl ">
+            What’s next? Feel free to reach out to me if you have a query or simply want 
+            connect! 
+            </p>
+            
 
             
-            <div className="w-full max-w-2xl  bg-opacity-80 p-8 rounded-3xl backdrop-blur-md">
+            {/* <div className="w-full max-w-2xl  bg-opacity-80 p-8 rounded-3xl backdrop-blur-md"> */}
 
                 {/* Contact Form */}
-                <form className="flex flex-col gap-6">
+                <form className="flex flex-col w-full max-w-2xl gap-6">
                     {/* Two-Column Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {/* Name Input */}
@@ -72,11 +77,11 @@ const Contact: React.FC = () => {
                         Send a message
                     </button>
                 </form>
-            </div>
+            {/* </div> */}
 
             {/* Social Media Section */}
             <div className="mt-10 text-center">
-                <p className="text-lg text-gray-300">You may also find me on these platforms!</p>
+                <p className="text-lg text-gray-300">You may also find me on these platforms</p>
                 <div className="flex justify-center gap-6 mt-4">
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-white text-2xl hover:text-blue-500 transition duration-300" />

@@ -29,7 +29,7 @@ const More: React.FC = () => {
                     <div className="flex flex-col w-1/3 h-[400] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                         {/* Text */}
                         <div className="text-4xl sm:text-2xl font-bold text-black">My Marathon Training</div>
-                        <p className="text-lg sm:text-xl text-black mb-6 text-left">Helloo</p>
+                        <p className="text-lg sm:text-md text-black mb-6 text-left">Helloo</p>
                     </div>
 
                     {/* Coding Card */}

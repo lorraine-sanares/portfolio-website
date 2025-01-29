@@ -9,13 +9,17 @@ const About: React.FC = () => {
         
             {/* About Card */}
             <div className="flex flex-col w-full h-[600] rounded-3xl bg-white p-16 text-start bg-opacity-80 backdrop-blur-md">
-                {/* Heading */}
-                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-black">
-                    About
-                </h1>
 
                 {/* Content Container */}
-                <div className="flex flex-row h-full items-center justify-center">
+                <div className="flex flex-row h-full items-left justify-center">
+
+                    {/* Heading */}
+                    <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-black">
+                        About
+                    </h1>
+                    {/* Divider */}
+                    {/* <div className="border-l border-black h-full mx-4"></div> */}
+
                     {/* About Summary */}
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">
                     Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
@@ -27,16 +31,13 @@ const About: React.FC = () => {
                     implementing advanced techniques in Python, SQL and 
                     Machine Learning. I use a wide range of visualisation tools 
                     to create beautiful and user-friendly visualisations. 
-                    </p>
+                    </p>                    
 
-                    {/* Divider */}
-                    <div className="border-l border-black h-full mx-4"></div>
-
-                    {/* More text */}
+                    {/* More text
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">
                     Hi, I’m Lorraine Sanares. I’m a Student, Writer and Content
                     Creator based in Melbourne, Australia.
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </div>

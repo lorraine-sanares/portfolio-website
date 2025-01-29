@@ -54,6 +54,11 @@ const Navbar: React.FC = () => {
             </li>
             <li>
                 <Link legacyBehavior href="/contact">
+                <a className="hover:text-blue-400">Blog</a>
+                </Link>
+            </li>
+            <li>
+                <Link legacyBehavior href="/contact">
                 <a className="hover:text-blue-400">Contact</a>
                 </Link>
             </li>

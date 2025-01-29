@@ -54,7 +54,9 @@ const Hero: React.FC = () => {
                 </h1>
 
                 {/* Content Container */}
-                <div className="flex flex-row w-1/2 h-full items-center justify-start">
+                <div className="flex flex-row justify-end items-start w-1/2 h-full">
+
+
                     {/* About Summary */}
                     <p className="text-lg sm:text-m text-black mb-6 text-left">
                     Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
