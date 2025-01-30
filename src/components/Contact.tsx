@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
 // npm install react-icons
 
 const Contact: React.FC = () => {
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
                         <FaLinkedin className="text-white text-2xl hover:text-blue-500 transition duration-300" />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter className="text-white text-2xl hover:text-blue-400 transition duration-300" />
+                        <FaDiscord className="text-white text-2xl hover:text-blue-400 transition duration-300" />
                     </a>
                     <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
                         <FaMedium className="text-white text-2xl hover:text-gray-400 transition duration-300" />
@@ -98,6 +98,7 @@ const Contact: React.FC = () => {
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                         <FaYoutube className="text-white text-2xl hover:text-red-500 transition duration-300" />
                     </a>
+
                 </div>
             </div>
         </section>
