@@ -44,11 +44,14 @@ const More: React.FC = () => {
                         </p>
                     </div>
                     
-                    {/* Writing Card */}
+                    {/* Resources Card */}
                     <div className="flex flex-col w-1/3 h-[400] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md">
                         {/* Text */}
                         <div className="text-4xl sm:text-2xl font-bold text-black">Resources</div>            
                         <p className="text-lg sm:text-xl text-black mb-6 text-left">
+                            Tech Education Workshop PowerPoint Decks
+                            Notion Personal Project Management Hub
+                            Writing guide to creating a successful newsletter 
                             
                         </p>
                     </div>                
