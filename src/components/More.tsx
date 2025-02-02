@@ -3,21 +3,23 @@ import Image from 'next/image';
 
 const More: React.FC = () => {
     return (
-        <section
-        style={{
-            backgroundImage: "url('/assets/semicircles.png')",
-            backgroundSize: "90%",
-            backgroundPosition: "300% 20%",
-            backgroundRepeat: "no-repeat", 
-            backgroundAttachment: "local", 
-            overflow: "visible",
-            backgroundOrigin: "border-box",
-        }}
-        className="relative w-full min-h-[150vh] text-white">
-            <div className="flex flex-col items-start justify-start w-full h-auto p-28 gap-10">
+        <section className="relative w-full min-h-[150vh] text-white">
+            {/* Background Image Container */}
+            <div className="absolute inset-0 w-full h-full">
+                <Image 
+                    src="/assets/semicircles.png" 
+                    alt="Background" 
+                    layout="fill" 
+                    objectFit="contain" 
+                    objectPosition="200% 200%"
+                    
+                />
+            </div>
+            
+            <div className="relative flex flex-col items-start justify-center w-full h-auto p-28 gap-10">
                 {/* Heading */}
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
-                        More Cool Stuff
+                    More Cool Stuff
                 </h1>
 
                 {/* Spacer */}
@@ -52,13 +54,9 @@ const More: React.FC = () => {
                             Tech Education Workshop PowerPoint Decks
                             Notion Personal Project Management Hub
                             Writing guide to creating a successful newsletter 
-                            
                         </p>
                     </div>                
                 </div>
-
-
-
             </div>
         </section>
     );
