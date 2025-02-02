@@ -68,6 +68,9 @@ const Hero: React.FC = () => {
                     implementing advanced techniques in Python, SQL and 
                     Machine Learning. I use a wide range of visualisation tools 
                     to create beautiful and user-friendly visualisations. 
+
+                    What's my story? What challenges did I face and how did I
+                    overcome them?
                     </p>
 
                     {/* Divider */}

@@ -1,6 +1,7 @@
 "use client";
-
 import React, { useRef, useEffect, useState } from "react";
+
+// MAKE THIS SECTION SCROLLABLE, LOCK THE BACKGROUND
 
 const Experience: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null); // Reference to the container
@@ -30,17 +31,18 @@ const Experience: React.FC = () => {
                 backgroundSize: "150%",
                 backgroundPosition: "130% 25%",
                 backgroundRepeat: "no-repeat", 
+                backgroundAttachment: "fixed"
             }}
             className="relative w-full h-auto text-white"
         >
             <div className="flex flex-col items-start justify-start w-full h-auto pl-28">
                 {/* Heading */}
-                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
+                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white sticky top-0 pt-16">
                     Work Experience
                 </h1>
 
                 {/* Content Container */}
-                <div className="flex flex-row items-start w-full h-auto mt-40" ref={containerRef}>
+                <div className="flex flex-row items-start w-full h-auto mt-40 " ref={containerRef}>
                     {/* Spacer */}
                     <div className="container w-1/2"></div>
 
