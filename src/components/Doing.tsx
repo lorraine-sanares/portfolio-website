@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
 
 const Doing: React.FC = () => {
     return (
@@ -47,7 +48,7 @@ const Doing: React.FC = () => {
                 </div>
 
                 {/* Coding Card */}
-                <div className="relative flex flex-col w-1/3 h-[550] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-auto rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
                         CREATIVE<br /> LOGIC
@@ -74,11 +75,21 @@ const Doing: React.FC = () => {
                         communicate effectively, and inspire action—whether through 
                         technical explanations, storytelling, or reflective pieces.
                     </p>
+
+                    {/* Button to Medium Profile */}
+                    <a 
+                        href="https://medium.com/@yourprofile" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="mt-auto self-start bg-black text-white text-md font-semibold px-4 py-2 rounded-xl hover:bg-gray-800 transition-all duration-300"
+                    >
+                        Check Out My Writing
+                    </a>
                 </div>
 
                 
                 {/* Writing Card */}
-                <div className="relative flex flex-col w-1/3 h-[550] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-auto rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
                         WRITING TO<br />INFLUENCE
@@ -105,7 +116,36 @@ const Doing: React.FC = () => {
                         communicate effectively, and inspire action—whether through 
                         technical explanations, storytelling, or reflective pieces.
                     </p>
+
+                    {/* Button to Medium Profile */}
+                    <a 
+                        href="https://medium.com/@yourprofile" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="mt-auto self-start bg-black text-white text-md font-semibold px-4 py-2 rounded-xl hover:bg-gray-800 transition-all duration-300"
+                    >
+                        Check Out My Writing
+                    </a>
                 </div>               
+            </div>
+
+            {/* Row of favicons */}
+            <div className="w-full mt-10 text-start">
+                
+
+                <div className="flex w-full justify-evenly gap-6 mt-4">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="text-white text-[100px] hover:text-blue-500 transition duration-300" />
+                    </a>
+
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="text-white text-[100px] hover:text-gray-300 transition duration-300" />
+                    </a>
+                    <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
+                        <FaMedium className="text-white text-[100px] hover:text-gray-400 transition duration-300" />
+                    </a>
+
+                </div>
             </div>
 
         </div>

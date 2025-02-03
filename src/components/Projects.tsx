@@ -19,8 +19,6 @@ const Projects: React.FC = () => {
                 <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-white">
                     Projects
                 </h1>
-
-                
                 
                 {/* Running dashboard card */}
                 <div className="relative flex flex-row w-full h-[500px] rounded-3xl bg-white p-10 text-start">
