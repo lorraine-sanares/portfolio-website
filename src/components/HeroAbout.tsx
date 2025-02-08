@@ -18,11 +18,18 @@ const Hero: React.FC = () => {
             <div className="flex flex-col items-start justify-start w-1/2 h-auto px-14 -mt-40">  
                 {/* Heading */}
                 <h2 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
-                    Hi there! I&apos;m Lorraine 👋
+                    Hi there!👋
                 </h2>
                 {/* Subheading */}
-                <p className="text-s sm:text-s text-white-400 mb-6 text-left">
-                Let&apos;s cut to the chase; I like to make cool sh*t. I&apos;ve 
+                <p className="text-s sm:text-lg text-white-400 mb-6 text-left">
+                I&apos;m Lorraine. I'm a data science Student, Educator, Writer 
+                and someone likes to make cool sh*t. Curious about my work? <br />
+
+                <br /> Let&apos;s get started! 
+               
+
+                </p>
+                {/* Lets cut to the chase; I like to make cool sh*t. I&apos;ve 
                 always been someone who feels restless when idle and don&apos;t 
                 have my hands on a project. As a person of many interests; it is 
                 my mission acquire skills, to find the perfect blend of it all 
@@ -30,7 +37,7 @@ const Hero: React.FC = () => {
                 </p>
         
                 {/* Location */}
-                <p>So, are you intriged? Let&apos;s get started then!</p>
+                {/* <p>So, are you intriged? Let&apos;s get started then!</p> */}
 
                 {/* Social Icons */}
 
