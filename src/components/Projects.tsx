@@ -6,7 +6,7 @@ import { Github, BookOpen, ExternalLink } from "lucide-react";
 // Reusable SocialIcons Component
 const SocialIcons = ({ size = 24, color = "text-black" }) => {
     return (
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 pl-2">
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <Github className={`w-${size} h-${size} ${color} hover:text-gray-700`} />
         </a>
@@ -24,7 +24,7 @@ const ProjectCard = ({ title, description, imgSrc }: { title: string; descriptio
   return (
     <div className="relative flex flex-col md:flex-row w-full h-[500] rounded-3xl bg-white p-6 md:p-10 text-start shadow-lg">
       {/* Left: Text Content */}
-      <div className="flex flex-col w-full md:w-1/2 items-start justify-center z-10">
+      <div className="flex flex-col w-full md:w-1/2 items-start justify-center z-10 pr-16">
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-black">{title}</h1>
         <p className="text-sm md:text-base text-black mb-6">{description}</p>
 
@@ -34,13 +34,7 @@ const ProjectCard = ({ title, description, imgSrc }: { title: string; descriptio
 
       {/* Right: Image */}
       <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden z-0">
-        <Image 
-            src="/assets/dashboard.png" 
-            alt="Running Dashboard" 
-            fill
-            style={{ objectFit: "cover" }} 
-            className="rounded-r-3xl"
-        />
+            <Image src={imgSrc} alt={title} fill className="object-cover rounded-r-3xl" />
         </div>
     </div>
   );
@@ -49,13 +43,13 @@ const ProjectCard = ({ title, description, imgSrc }: { title: string; descriptio
 const Projects: React.FC = () => {
   return (
     <section
-      style={{
-        backgroundImage: "url('/assets/circle.png')",
-        backgroundSize: "80%",
-        backgroundPosition: "-150% 150%",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "local",
-      }}
+    //   style={{
+    //     backgroundImage: "url('/assets/circle.png')",
+    //     backgroundSize: "80%",
+    //     backgroundPosition: "-150% 150%",
+    //     backgroundRepeat: "no-repeat",
+    //     backgroundAttachment: "local",
+    //   }}
       className="relative w-full h-auto text-white"
     >
       <div className="flex flex-col items-start justify-start w-full h-auto p-10 md:p-28 gap-16">
@@ -65,18 +59,26 @@ const Projects: React.FC = () => {
         {/* Project Cards */}
         <ProjectCard
           title="Running Dashboard"
-          description="Track your running metrics, analyze progress, and stay motivated with an interactive dashboard."
+          description="My most recent project involved analyzing my health and running statistics to 
+          optimize my training for the Nike 10km Run this October. Inspired by the Strava app, I 
+          incorporated a linear regression model to predict my running performance on race day.."
           imgSrc="/assets/dashboard.png"
         />
         <ProjectCard
           title="Bookstore Analysis"
-          description="A data-driven analysis of sales trends, customer insights, and inventory management in bookstores."
-          imgSrc="/assets/bookstore.png"
+          description="A data-driven analysis of sales trends, customer insights, and inventory management 
+          in bookstores. A Unimelb coursework assignment, I collaborated with two other group members to 
+          analyze data from an online bookstore. We applied unsupervised machine learning models to extract 
+          insights from customer and book attributes, to aid the company on which new books to purchase for their store."
+          imgSrc="/assets/kmeans3.png"
         />
         <ProjectCard
           title="Travel Dashboard"
-          description="A travel insights dashboard to plan trips, track expenses, and explore destinations efficiently."
-          imgSrc="/assets/travel.png"
+          description="A travel insights dashboard to plan trips, track expenses, and explore destinations efficiently. 
+          My very first data analysis project, completed during VCE Data Analytics in 2022, is where I first developed 
+          a fascination with data and visualisation. The project involved analysing a country's attributes post-pandemic 
+          to help travellers plan their holiday destinations."
+          imgSrc="/assets/travellex.png"
         />
       </div>
     </section>
