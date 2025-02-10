@@ -9,7 +9,7 @@ import More from "@/components/More";
 import Datasci from "@/components/Datasci";
 import Contact from "@/components/Contact";
 
-export default function Page() {
+export default function page() {
   return (
     <main>
       <Navbar />

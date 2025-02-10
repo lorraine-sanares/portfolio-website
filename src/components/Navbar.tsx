@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false); // State to toggle the mobile menu
 
@@ -63,6 +64,7 @@ const Navbar: React.FC = () => {
                 </Link>
             </li>
             </ul>
+
         </div>
         </nav>
     );
