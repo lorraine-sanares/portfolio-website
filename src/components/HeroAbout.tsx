@@ -74,7 +74,10 @@ const Hero: React.FC = () => {
                     extracting powerful and impacful insights from data; 
                     implementing advanced techniques in Python, SQL and 
                     Machine Learning. I use a wide range of visualisation tools 
-                    to create beautiful and user-friendly visualisations. 
+                    to create beautiful and user-friendly visualisations. My mission 
+                    is to empower others by leading dynamic, hands-on workshops that 
+                    bridge the gap between theory and industry skills, equipping others 
+                    with the knowledge and confidence to excel in their career in tech.  
 
                     What's my story? What challenges did I face and how did I
                     overcome them?

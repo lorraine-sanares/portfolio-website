@@ -19,8 +19,8 @@ const Contact: React.FC = () => {
                 Get in touch
             </h1>
             <p className="text-lg sm:text-md mb-8 text-center text-white w-full max-w-2xl ">
-            What’s next? Feel free to reach out to me if you have a query or simply want 
-            connect! 
+            What&apos;s next? If you have a question or are interested in collaborating, 
+            I&apos;d love to connect! Let&apos;s work together to make industry education more accessible and impactful.
             </p>
             
 

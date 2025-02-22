@@ -83,42 +83,79 @@ const Experience: React.FC = () => {
                         <div className="flex flex-col items-start justify-start w-auto h-auto p-16 gap-8">
                             <div
                                 ref={cardRefs[0]}
-                                className="flex flex-col w-[600px] h-[350px] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
+                                className="flex flex-col w-[600px] h-[auto] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
                             >
                                 <div className="text-3xl font-bold text-black">AI & Data Intern At Deloitte</div>
                                 <p className="text-lg sm:text-xl text-black mb-6 text-left">
                                     Nov. 2024 - Dec. 2024
                                 </p>
+                                <p className="text-lg sm:text-m text-black mb-6 text-left">
+                                    <ul className="list-disc pl-6 space-y-2">
+                                        <li>Designed and implemented an event-driven data pipeline on AWS implementing EventBridge, Lambda, Airflow, and S3, automating data ingestion, orchestration, and storage.</li>
+                                        <li>Implemented key pipeline components using Python, PySpark, Airflow, and AWS, managing event-triggered and scheduled processing, orchestrating tasks via Airflow DAGs, configuring security settings, and storing processed outputs in S3 for downstream use.</li>
+                                        <li>Engineered SQL and AWS Redshift solutions to ensure clean, structured, and accessible data for analysis and reporting.</li>
+                                        <li>Coordinated with team members and internal stakeholders to refine data processing strategies, improving workflow efficiency.</li>
+                                        <li>Liaised with senior team members and external stakeholders, presenting insights through PowerPoint reports on Microsoft Teams, ensuring alignment on project objectives.</li>
+                                        <li>Developed a client-facing pack utilizing Microsoft PowerPoint and Excel, integrating stakeholder feedback and expediting key project deliverables.</li>
+                                        <li>Documented and refined data ingestion processes using Microsoft Word, ensuring clear procedural guidelines for the team.</li>
+                                    </ul>
+                                </p>
                             </div>
 
                             <div
                                 ref={cardRefs[1]}
-                                className="flex flex-col w-[600px] h-[350px] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
+                                className="flex flex-col w-[600px] h-[auto] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
                             >
                                 <div className="text-3xl font-bold text-black">Private Piano Teacher</div>
                                 <p className="text-lg sm:text-xl text-black mb-6 text-left">
-                                    Nov. 2024 - Dec. 2024
+                                    Jun. 2022 - Present
                                 </p>
+                                <p className="text-lg sm:text-m text-black mb-6 text-left">
+                                    <ul className="list-disc pl-6 space-y-2">
+                                        <li>Taught 40 piano lessons annually to a primary school-aged student, advancing music theory and technique.</li>
+                                        <li>Developed weekly lesson plans aligned with AMEB classical coursework and adapted teaching methods to maintain high engagement and motivation.</li>
+                                        <li>Prepared student for recitals and AMEB exams, whilst maintaining regular communication with parent to manage expectations and outcomes.</li>
+                                    </ul>
+                                </p>
+
+
                             </div>
 
                             <div
                                 ref={cardRefs[2]}
-                                className="flex flex-col w-[600px] h-[350px] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
+                                className="flex flex-col w-[600px] h-[auto] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
                             >
                                 <div className="text-3xl font-bold text-black">Teaching Assistant At Kumon</div>
                                 <p className="text-lg sm:text-xl text-black mb-6 text-left">
-                                    Nov. 2024 - Dec. 2024
+                                    Feb. 2021 - Present
                                 </p>
+                                <p className="text-lg sm:text-m text-black mb-6 text-left">
+                                    <ul className="list-disc pl-6 space-y-2">
+                                        <li>Entered, organised, and maintained student performance data in Excel, utilising formulas and functions to track progress, generate reports, and identify learning trends to support individualised learning plans.</li>
+                                        <li>Tutored students in math and reading, providing constructive feedback to enhance academic performance.</li>
+                                        <li>Managed administrative tasks and reception duties, ensuring smooth business operations.</li>
+                                        <li>Responded to parent inquiries regarding student homework, providing clarifications and progress updates.</li>
+                                    </ul>
+                                </p>
+
                             </div>
                             
                             <div
                                 ref={cardRefs[3]}
-                                className="flex flex-col w-[600px] h-[350px] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
+                                className="flex flex-col w-[600px] h-[auto] rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md"
                             >
                                 <div className="text-3xl font-bold text-black">Private Maths Tutor</div>
                                 <p className="text-lg sm:text-xl text-black mb-6 text-left">
                                     Mar. 2022 - Oct. 2022
                                 </p>
+                                <p className="text-lg sm:text-m text-black mb-6 text-left">
+                                    <ul className="list-disc pl-6 space-y-2">
+                                        <li>Provided personalized math tutoring to a Year 7 student, enhancing their understanding and engagement with math concepts through customized lesson plans.</li>
+                                        <li>Motivated the student by using creative and engaging teaching methods, fostering a positive attitude toward math.</li>
+                                        <li>Monitored the student's progress in collaboration with their math teacher, successfully improving their grades by at least 2% in each school assessment.</li>
+                                    </ul>
+                                </p>
+
                             </div>
                             
                         </div>

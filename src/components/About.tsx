@@ -22,7 +22,7 @@ const About: React.FC = () => {
 
                     {/* About Summary */}
                     <p className="text-lg sm:text-xl text-black mb-6 text-left">
-                    Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
+                    Hi, I&apos;m Lorraine Sanares. I&apos;m a Student and aspiring 
                     Data Scientist based in Melbourne, Australia. <br />
                     <br />
                     As third-year Bachelor of Science student majoring in Data 
@@ -30,7 +30,10 @@ const About: React.FC = () => {
                     extracting powerful and impacful insights from data; 
                     implementing advanced techniques in Python, SQL and 
                     Machine Learning. I use a wide range of visualisation tools 
-                    to create beautiful and user-friendly visualisations. 
+                    to create beautiful and user-friendly visualisations. My mission 
+                    is to empower others by leading dynamic, hands-on workshops that 
+                    bridge the gap between theory and industry skills, equipping others 
+                    with the knowledge and confidence to excel in their career in tech. 
                     </p>                    
 
                     {/* More text
