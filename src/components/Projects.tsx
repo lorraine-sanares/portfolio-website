@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
           title="Running Dashboard"
           description="My most recent project involved analyzing my health and running statistics to 
           optimize my training for the Nike 10km Run this October. Inspired by the Strava app, I 
-          incorporated a linear regression model to predict my running performance on race day.."
+          incorporated a linear regression model to predict my running performance on race day.. hellow "
           imgSrc="/assets/dashboard.png"
         />
         <ProjectCard

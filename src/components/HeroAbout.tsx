@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                 {/* Subheading */}
                 <p className="text-s sm:text-lg text-white-400 mb-6 text-left">
                 I&apos;m Lorraine. I'm a data science Student, Educator, Writer 
-                and someone likes to make cool sh*t. Curious about my work? <br />
+                and someone who likes to make cool sh*t. Curious about my work? <br />
 
                 <br /> Let&apos;s get started! 
                

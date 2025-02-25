@@ -93,7 +93,6 @@ const Experience: React.FC = () => {
                                     <ul className="list-disc pl-6 space-y-2">
                                         <li>Designed and implemented an event-driven data pipeline on AWS implementing EventBridge, Lambda, Airflow, and S3, automating data ingestion, orchestration, and storage.</li>
                                         <li>Implemented key pipeline components using Python, PySpark, Airflow, and AWS, managing event-triggered and scheduled processing, orchestrating tasks via Airflow DAGs, configuring security settings, and storing processed outputs in S3 for downstream use.</li>
-                                        <li>Engineered SQL and AWS Redshift solutions to ensure clean, structured, and accessible data for analysis and reporting.</li>
                                         <li>Coordinated with team members and internal stakeholders to refine data processing strategies, improving workflow efficiency.</li>
                                         <li>Liaised with senior team members and external stakeholders, presenting insights through PowerPoint reports on Microsoft Teams, ensuring alignment on project objectives.</li>
                                         <li>Developed a client-facing pack utilizing Microsoft PowerPoint and Excel, integrating stakeholder feedback and expediting key project deliverables.</li>
