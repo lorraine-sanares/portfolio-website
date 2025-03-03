@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 // NEED TO FIND A WAY TO REMOVE CONSTANT WIDTHS AND HEIGHTS
 
@@ -47,22 +48,43 @@ const Hero: React.FC = () => {
             <div className="container w-1/6"></div>
 
             {/* Photo container */}
-            <div className="w-[350] h-[350] rounded-full bg-white backdrop-blur-md bg-opacity-75 -mt-60"></div>
+            <div className="w-[350] h-[350] rounded-full bg-white backdrop-blur-md overflow-hidden bg-opacity-75 -mt-60">
+                <Image 
+                            src="/assets/id.png" 
+                            alt="profile" 
+                            fill 
+                            style={{ objectFit: "contain" }} 
+                            className="absolute top-0 left-0"
+                        />
+            </div>
 
         </div>
 
         {/* About Content */}
         <div className="flex flex-col items-center justify-center mb-8 -mt-40 p-28">
             {/* About Card */}
-            <div className="flex flex-col w-full h-[600] rounded-3xl bg-white p-16 text-start bg-opacity-80 backdrop-blur-md">
-                {/* Heading */}
-                <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-black">
-                    About
-                </h1>
+            <div className="flex flex-row w-full h-[800] rounded-3xl bg-white p-16 text-start bg-opacity-80 backdrop-blur-md">
+
+                <div className="relative w-full h-full overflow-hidden rounded-3xl">
+                        <Image 
+                            src="/assets/sideprofile.jpg" 
+                            alt="profile" 
+                            fill 
+                            style={{ objectFit: "cover" }} 
+                            className="absolute top-0 left-0"
+                        />
+                </div> 
+
+                {/* Divider */}
+                <div className="border-l border-black h-full mx-12 -mt-30"></div>
+                
 
                 {/* Content Container */}
-                <div className="flex flex-row justify-end items-start w-1/2 h-full">
-
+                <div className="flex flex-col justify-start items-start w-full h-full">
+                    {/* Heading */}
+                    <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-black">
+                        About
+                    </h1>
 
                     {/* About Summary */}
                     <p className="text-lg sm:text-m text-black mb-6 text-left">
@@ -83,10 +105,9 @@ const Hero: React.FC = () => {
                     overcome them?
                     </p>
 
-                    {/* Divider */}
-                    <div className="border-l border-black h-full mx-4 -mt-10"></div>
-
                 </div>
+
+           
             </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Doing: React.FC = () => {
             
             {/* Heading */}
             <h2 className="text-6xl sm:text-4xl font-extrabold mb-4 text-white">
-                    WHAT I VALUE
+                    What I value
             </h2>
             <div className="container h-10"></div>
             {/* Cards Container */} 
