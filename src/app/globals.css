@@ -17,18 +17,18 @@
 }
 
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-no-repeat bg-fixed;
     background-image: url('/assets/semicircles.png');
     background-size: 90%;
     background-position: 300% 20%;
   }
-}
+} */
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background); 
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -40,6 +40,9 @@ body {
   background-color: #030712;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 * {

@@ -9,19 +9,43 @@ import More from "@/components/More";
 import Datasci from "@/components/Datasci";
 import Contact from "@/components/Contact";
 
-export default function page() {
+export default function Page() {
   return (
-    <main>
+    <main className="scroll-smooth">
       <Navbar />
-      <Hero />
-      <Doing />
-      <Experience />
-      <TechStack />
-      <Projects />
-      <Datasci />
-      <More />
-      <Contact />
+      
+      <section id="hero">
+        <Hero />
+      </section>
 
+      <section id="doing">
+        <Doing />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="techstack">
+        <TechStack />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="datasci">
+        <Datasci />
+      </section>
+
+      <section id="more">
+        <More />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 }
+

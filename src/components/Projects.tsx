@@ -42,47 +42,53 @@ const ProjectCard = ({ title, description, imgSrc }: { title: string; descriptio
 
 const Projects: React.FC = () => {
   return (
-    <section
-    //   style={{
-    //     backgroundImage: "url('/assets/circle.png')",
-    //     backgroundSize: "80%",
-    //     backgroundPosition: "-150% 150%",
-    //     backgroundRepeat: "no-repeat",
-    //     backgroundAttachment: "local",
-    //   }}
-      className="relative w-full h-auto text-white"
-    >
-      <div className="flex flex-col items-start justify-start w-full h-auto p-10 md:p-28 gap-16">
-        {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white">Projects</h1>
+    <section className="relative w-full h-auto text-white">
+      {/* Main Content Container */}
+      <div className="flex flex-col items-start text-left w-full h-auto px-10 md:px-28 py-10 gap-8">
+       {/* Heading */}
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white">
+          Projects
+        </h1>
 
-        {/* Project Cards */}
-        <ProjectCard
-          title="Running Dashboard"
-          description="My most recent project involved analyzing my health and running statistics to 
-          optimize my training for the Nike 10km Run this October. Inspired by the Strava app, I 
-          incorporated a linear regression model to predict my running performance on race day.. hellow "
-          imgSrc="/assets/dashboard.png"
-        />
-        <ProjectCard
-          title="Bookstore Analysis"
-          description="A data-driven analysis of sales trends, customer insights, and inventory management 
-          in bookstores. A Unimelb coursework assignment, I collaborated with two other group members to 
-          analyze data from an online bookstore. We applied unsupervised machine learning models to extract 
-          insights from customer and book attributes, to aid the company on which new books to purchase for their store."
-          imgSrc="/assets/kmeans3.png"
-        />
-        <ProjectCard
-          title="Travel Dashboard"
-          description="A travel insights dashboard to plan trips, track expenses, and explore destinations efficiently. 
-          My very first data analysis project, completed during VCE Data Analytics in 2022, is where I first developed 
-          a fascination with data and visualisation. The project involved analysing a country's attributes post-pandemic 
-          to help travellers plan their holiday destinations."
-          imgSrc="/assets/travellex.png"
-        />
+        {/* Subtitle */}
+        <p className="text-sm md:text-lg text-white">
+          This website you're on now is something I coded from scratch! 
+          But here are other projects I've done:
+        </p>
+
+        {/* Projects Grid */}
+        <div className="flex flex-col items-start w-full gap-16">
+        
+          {/* Project Cards */}
+          <ProjectCard
+            title="Running Dashboard"
+            description="My most recent project involved analyzing my health and running statistics to 
+            optimize my training for the Nike 10km Run this October. Inspired by the Strava app, I 
+            incorporated a linear regression model to predict my running performance on race day.. hellow "
+            imgSrc="/assets/dashboard.png"
+          />
+          <ProjectCard
+            title="Bookstore Analysis"
+            description="A data-driven analysis of sales trends, customer insights, and inventory management 
+            in bookstores. A Unimelb coursework assignment, I collaborated with two other group members to 
+            analyze data from an online bookstore. We applied unsupervised machine learning models to extract 
+            insights from customer and book attributes, to aid the company on which new books to purchase for their store."
+            imgSrc="/assets/kmeans3.png"
+          />
+          <ProjectCard
+            title="Travel Dashboard"
+            description="A travel insights dashboard to plan trips, track expenses, and explore destinations efficiently. 
+            My very first data analysis project, completed during VCE Data Analytics in 2022, is where I first developed 
+            a fascination with data and visualisation. The project involved analysing a country's attributes post-pandemic 
+            to help travellers plan their holiday destinations."
+            imgSrc="/assets/travellex.png"
+          />
+
+        </div>
       </div>
     </section>
   );
 };
 
 export default Projects;
+
