@@ -103,7 +103,7 @@ const Doing: React.FC = () => {
                     {/* Text Paragraph Below the Image */}
                     <p className="text-s sm:text-s text-black pt-7 mb-4 text-left leading-tight">
                         Shared knowledge is the foundation of growth, innovation, and collective 
-                        success - I've had a long-time passion for teaching, therefore I try my best
+                        success - I&apos;ve had a long-time passion for teaching, therefore I try my best
                         to pass on what I learn through writing, workshops, or everyday conversation. 
                         I aim to foster curiosity and inspire others to push their own boundaries, 
                         as I do mine.

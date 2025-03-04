@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaMedium, FaGithub, FaYoutube, } from "react-icons/fa";
+import { FaLinkedin, FaMedium, FaGithub, } from "react-icons/fa";
 // npm install react-icons
 
 const Contact: React.FC = () => {

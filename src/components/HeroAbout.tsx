@@ -97,10 +97,10 @@ const Hero: React.FC = () => {
                     That project sparked my curiosity in data.<br />
                     <br />
 
-                    For the past two years, I’ve been studying data science at 
+                    For the past two years, I&apos;ve been studying data science at 
                     The University of Melbourne, learning how to extract insights 
                     from complex datasets and communicate them in ways that drive
-                    impact. Now, as a third-year student, I’ve realised that I 
+                    impact. Now, as a third-year student, I&apos;ve realised that I 
                     love the dynamic nature of problem-solving—combining technical 
                     expertise with storytelling to support the bigger picture 
                     through data.<br />
