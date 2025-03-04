@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
+// import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
 
 const Doing: React.FC = () => {
     return (
