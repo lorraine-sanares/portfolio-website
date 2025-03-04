@@ -47,7 +47,7 @@ const Datasci: React.FC = () => {
                     which is the reason why I chose this career. <br />
                     <br />
                     I have always been a life-long 
-                    learner that loves up-skilling, and data sciences allows me to merge the things 
+                    learner that loves up-skilling, and data science allows me to merge the things 
                     a learn from different domains. There is a name we give to a data scientist who 
                     is equally skilled in all three areas of software engineering, mathematics and 
                     communication - We call them Unicorns. <br />
@@ -56,9 +56,9 @@ const Datasci: React.FC = () => {
                     though I understand that this is a difficult task. However, I am always up for a 
                     good challenge.<br /> 
                     <br />
-                    That's why I believe generalists are the driving force behind 
+                    I believe generalists are the driving force behind 
                     innovation, bridging disciplines, fostering creativity, and driving 
-                    meaningful progress.<br />
+                    meaningful change.<br />
                     <br />
                     
                 </p>

@@ -51,8 +51,9 @@ const More: React.FC = () => {
                         {/* Text */}
                         <div className="text-4xl sm:text-2xl font-bold text-black">Women in Tech</div>
                         <p className="text-lg sm:text-md text-black mb-6 text-left">
-                            I love teaching and learning. Hence, my role as an Education
-                            Director for WIT Unimelb allows me to combine the two passions. <br />
+                            I love learning and teaching. My role as Education
+                            Director for WIT Unimelb allows me to combine the two passions as I 
+                            strive to create impactful learning experiences for students.<br />
                             <br />
                             Check out some of the workshops I run!
                         </p>
@@ -63,9 +64,7 @@ const More: React.FC = () => {
                         {/* Text */}
                         <div className="text-4xl sm:text-2xl font-bold text-black">Resources</div>            
                         <p className="text-lg sm:text-xl text-black mb-6 text-left">
-                            Tech Education Workshop PowerPoint Decks
-                            Notion Personal Project Management Hub
-                            Writing guide to creating a successful newsletter 
+                            
                         </p>
                     </div>                
                 </div>

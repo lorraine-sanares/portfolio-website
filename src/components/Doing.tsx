@@ -10,18 +10,18 @@ const Doing: React.FC = () => {
             
             {/* Heading */}
             <h2 className="text-6xl sm:text-4xl font-extrabold mb-4 text-white">
-                    What I value
+                    What drives me
             </h2>
             <div className="container h-10"></div>
             {/* Cards Container */} 
             <div className="flex flex-row items-start justify-center w-full gap-10">
                 {/* Study Card */}
-                <div className="relative flex flex-col w-1/3 h-[550] rounded-3xl bg-white 
+                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white 
                                 p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 
                                 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        CONTINUOUS<br /> LEARNING
+                        MY MISSION<br />
                     </div>
 
                     <div className="container"></div>
@@ -31,7 +31,7 @@ const Doing: React.FC = () => {
                         <Image 
                             src="/assets/book.png" 
                             alt="Overlay" 
-                            width={400} 
+                            width={300} 
                             height={100} 
                             style={{ objectFit: "contain" }} 
                             className="rounded-lg"
@@ -39,19 +39,20 @@ const Doing: React.FC = () => {
                     </div>
 
                     {/* Text Paragraph Below the Image */}
-                    <p className="text-lg sm:text-md text-black mb-4 text-left leading-tight">
-                        I use writing to shape ideas, share insights, and spark 
-                        conversations. It helps me distill complex thoughts, 
-                        communicate effectively, and inspire action—whether through 
-                        technical explanations, storytelling, or reflective pieces.
+                    <p className="text-s sm:text-s text-black mb-4 text-left leading-tight">
+                        I dedicate my time to continuous learning and upskilling—exploring 
+                        frameworks and technologies beyond coursework. 
+                        I want to want to deepen my expertise 
+                        and apply knowledge in real-world contexts—whether through hands-on 
+                        projects, certifications, or self-driven exploration.
                     </p>
                 </div>
 
                 {/* Coding Card */}
-                <div className="relative flex flex-col w-1/3 h-auto rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        CREATIVE<br /> LOGIC
+                        MY VISION<br />
                     </div>
 
                     <div className="container"></div>
@@ -69,30 +70,20 @@ const Doing: React.FC = () => {
                     </div>
 
                     {/* Text Paragraph Below the Image */}
-                    <p className="text-lg sm:text-md text-black pt-4 mb-4 text-left leading-tight">
-                        I use writing to shape ideas, share insights, and spark 
-                        conversations. It helps me distill complex thoughts, 
-                        communicate effectively, and inspire action—whether through 
-                        technical explanations, storytelling, or reflective pieces.
+                    <p className="text-s sm:text-s text-black pt-4 mb-4 text-left leading-tight">
+                        Pursuing a future where I have agency to express my authentic self
+                        in my work; finding that perfect blend between what I love, what I&apos;m
+                        good at, what the world needs, and what I can be paid for - my ikigai. 
                     </p>
 
-                    {/* Button to Medium Profile */}
-                    <a 
-                        href="https://medium.com/@yourprofile" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="mt-auto self-start bg-black text-white text-md font-semibold px-4 py-2 rounded-xl hover:bg-gray-800 transition-all duration-300"
-                    >
-                        Check Out My Writing
-                    </a>
                 </div>
 
                 
                 {/* Writing Card */}
-                <div className="relative flex flex-col w-1/3 h-auto rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        WRITING TO<br />INFLUENCE
+                        MY PURPOSE<br />
                     </div>
 
                     <div className="container"></div>
@@ -110,27 +101,28 @@ const Doing: React.FC = () => {
                     </div>
 
                     {/* Text Paragraph Below the Image */}
-                    <p className="text-lg sm:text-md text-black pt-4 mb-4 text-left leading-tight">
-                        I use writing to shape ideas, share insights, and spark 
-                        conversations. It helps me distill complex thoughts, 
-                        communicate effectively, and inspire action—whether through 
-                        technical explanations, storytelling, or reflective pieces.
+                    <p className="text-s sm:text-s text-black pt-7 mb-4 text-left leading-tight">
+                        Shared knowledge is the foundation of growth, innovation, and collective 
+                        success - I've had a long-time passion for teaching, therefore I try my best
+                        to pass on what I learn through writing, workshops, or everyday conversation. 
+                        I aim to foster curiosity and inspire others to push their own boundaries, 
+                        as I do mine.
                     </p>
 
                     {/* Button to Medium Profile */}
-                    <a 
+                    {/* <a 
                         href="https://medium.com/@yourprofile" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="mt-auto self-start bg-black text-white text-md font-semibold px-4 py-2 rounded-xl hover:bg-gray-800 transition-all duration-300"
                     >
                         Check Out My Writing
-                    </a>
+                    </a> */}
                 </div>               
             </div>
 
             {/* Row of favicons */}
-            <div className="w-full mt-10 text-start">
+            {/* <div className="w-full mt-10 text-start">
                 
 
                 <div className="flex w-full justify-evenly gap-6 mt-4">
@@ -146,7 +138,7 @@ const Doing: React.FC = () => {
                     </a>
 
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );

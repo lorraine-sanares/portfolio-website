@@ -23,8 +23,8 @@ const Hero: React.FC = () => {
                 </h2>
                 {/* Subheading */}
                 <p className="text-s sm:text-lg text-white-400 mb-6 text-left">
-                I&apos;m Lorraine. I'm a data science Student, Educator, Writer 
-                and someone who likes to make cool sh*t. Curious about my work? <br />
+                I&apos;m Lorraine Sanares. I&apos;m a data science student, educator, 
+                and someone who likes to build cool projects. Curious about my work? <br />
 
                 <br /> Let&apos;s get started! 
                
@@ -87,22 +87,39 @@ const Hero: React.FC = () => {
                     </h1>
 
                     {/* About Summary */}
-                    <p className="text-lg sm:text-m text-black mb-6 text-left">
-                    Hi, I’m Lorraine Sanares. I’m a Student and aspiring 
-                    Data Scientist based in Melbourne, Australia. <br />
+                    <p className="text-s sm:text-s text-black mb-6 text-left">
+                    It all began with a simple dashboard.<br />
                     <br />
-                    As third-year Bachelor of Science student majoring in Data 
-                    Science at the University of Melbourne, I specialize in 
-                    extracting powerful and impacful insights from data; 
-                    implementing advanced techniques in Python, SQL and 
-                    Machine Learning. I use a wide range of visualisation tools 
-                    to create beautiful and user-friendly visualisations. My mission 
-                    is to empower others by leading dynamic, hands-on workshops that 
-                    bridge the gap between theory and industry skills, equipping others 
-                    with the knowledge and confidence to excel in their career in tech.  
+                    In 2022, as a Year 12 student, I built a Tableau dashboard 
+                    visualising COVID border restrictions. It was just a school 
+                    project, but something clicked. I was drawn to the process 
+                    of transforming raw data into compelling visual stories. 
+                    That project sparked my curiosity in data.<br />
+                    <br />
 
-                    What's my story? What challenges did I face and how did I
-                    overcome them?
+                    For the past two years, I’ve been studying data science at 
+                    The University of Melbourne, learning how to extract insights 
+                    from complex datasets and communicate them in ways that drive
+                    impact. Now, as a third-year student, I’ve realised that I 
+                    love the dynamic nature of problem-solving—combining technical 
+                    expertise with storytelling to support the bigger picture 
+                    through data.<br />
+                    <br />
+
+                    But learning data science hasn't been smooth sailing. Like many STEM 
+                    students, I struggled to bridge the gap between theory and 
+                    practice—spending hours on formula proofs and debugging 
+                    algorithms, unsure of the practical applications to real-world 
+                    challenges.<br />
+                    <br />
+
+                    However, through hands-on projects and an internship, my pathway 
+                    became clear: to become an adaptable data scientist who is 
+                    equally skilled computer science, mathematics and business 
+                    expertise. <br />
+                    <br />
+                    
+                    A unicorn.
                     </p>
 
                 </div>

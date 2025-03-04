@@ -83,21 +83,18 @@ const Contact: React.FC = () => {
             <div className="mt-10 text-center">
                 <p className="text-lg text-gray-300">You may also find me on these platforms</p>
                 <div className="flex justify-center gap-6 mt-4">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="www.linkedin.com/in/lorraine-sanares" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-white text-2xl hover:text-blue-500 transition duration-300" />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaDiscord className="text-white text-2xl hover:text-blue-400 transition duration-300" />
-                    </a>
-                    <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://medium.com/@lorrainesanares" target="_blank" rel="noopener noreferrer">
                         <FaMedium className="text-white text-2xl hover:text-gray-400 transition duration-300" />
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Lorraine-Sanares" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-white text-2xl hover:text-gray-300 transition duration-300" />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                         <FaYoutube className="text-white text-2xl hover:text-red-500 transition duration-300" />
-                    </a>
+                    </a> */}
 
                 </div>
             </div>

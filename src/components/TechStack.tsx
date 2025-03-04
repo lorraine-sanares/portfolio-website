@@ -33,7 +33,7 @@ const TechStack: React.FC = () => {
                         On top of building my proficiency in programming languages for analytics 
                         (i.e Python and R), I also like to dabble in UX/UI design, web development, 
                         data engineering and cloud computing. <br />
-                        <br /> More details of my tech skills can be viewed on my LinkedIn and GitHub!
+                        <br /> 
                     </p>
                 </div>
                 
@@ -79,10 +79,13 @@ const TechStack: React.FC = () => {
                 </h1>
 
                 <div className="flex flex-col items-start justify-start w-1/2 h-full">
-                    <p>
-                        TensorFlow
-                    </p>
-                    
+                    <ul className="list-disc list-inside">
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-Learn</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                    </ul>
                 </div>
             </div> 
         </section>
