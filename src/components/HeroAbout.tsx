@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
                     through data.<br />
                     <br />
 
-                    But learning data science hasn't been smooth sailing. Like many STEM 
+                    But learning data science hasn&apos;t been smooth sailing. Like many STEM 
                     students, I struggled to bridge the gap between theory and 
                     practice—spending hours on formula proofs and debugging 
                     algorithms, unsure of the practical applications to real-world 

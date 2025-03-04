@@ -123,9 +123,9 @@ const Experience: React.FC = () => {
                                     date: "Mar. 2022 - Oct. 2022",
                                     description: (
                                         <ul className="list-disc pl-6 space-y-2">
-                                            <li>Provided personalized math tutoring to a Year 7 student, enhancing their understanding and engagement with math concepts through customized lesson plans.</li>
+                                            <li>Provided personalised math tutoring to a Year 7 student, enhancing their understanding and engagement with math concepts through customized lesson plans.</li>
                                             <li>Motivated the student by using creative and engaging teaching methods, fostering a positive attitude toward math.</li>
-                                            <li>Monitored the student's progress in collaboration with their math teacher, successfully improving their grades by at least 2% in each school assessment.</li>
+                                            <li>Monitored the student&apos;s progress in collaboration with their math teacher, successfully improving their grades by at least 2% in each school assessment.</li>
                                         </ul>
                                     ),
                                 },

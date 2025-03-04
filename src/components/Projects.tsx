@@ -80,8 +80,8 @@ const Projects: React.FC = () => {
 
         {/* Subtitle */}
         <p className="text-sm md:text-lg text-white">
-          This website you're on now is something I coded from scratch! 
-          But here are other projects I've done:
+          This website you&apos;re on now is something I coded from scratch! 
+          But here are other projects I&apos;ve done:
         </p>
 
         {/* Projects Grid */}
