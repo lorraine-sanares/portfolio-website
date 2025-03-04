@@ -2,48 +2,65 @@ import React from "react";
 import Image from "next/image";
 import { Github, BookOpen, ExternalLink } from "lucide-react";
 
-// Project Card Component for reusability
+// Define prop types for SocialIcons
+interface SocialIconsProps {
+  githubUrl?: string;
+  docsUrl?: string;
+  externalUrl?: string;
+  size?: number;
+  color?: string;
+}
+
 // Reusable SocialIcons Component
-const SocialIcons = ({ githubUrl, docsUrl, externalUrl, size = 24, color = "text-black" }) => {
+const SocialIcons: React.FC<SocialIconsProps> = ({ 
+  githubUrl, 
+  docsUrl, 
+  externalUrl, 
+  size = 24, 
+  color = "text-black" 
+}) => {
   return (
     <div className="flex space-x-4 pl-2">
       {githubUrl && (
         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <Github className={`w-${size} h-${size} ${color} hover:text-gray-700`} />
+          <Github className={`w-[${size}px] h-[${size}px] ${color} hover:text-gray-700`} />
         </a>
       )}
       {docsUrl && (
         <a href={docsUrl} target="_blank" rel="noopener noreferrer">
-          <BookOpen className={`w-${size} h-${size} ${color} hover:text-gray-700`} />
+          <BookOpen className={`w-[${size}px] h-[${size}px] ${color} hover:text-gray-700`} />
         </a>
       )}
       {externalUrl && (
         <a href={externalUrl} target="_blank" rel="noopener noreferrer">
-          <ExternalLink className={`w-${size} h-${size} ${color} hover:text-gray-700`} />
+          <ExternalLink className={`w-[${size}px] h-[${size}px] ${color} hover:text-gray-700`} />
         </a>
       )}
     </div>
   );
 };
 
+// Define prop types for ProjectCard
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  imgSrc: string;
+  githubUrl?: string;
+  docsUrl?: string;
+  externalUrl?: string;
+}
 
-const ProjectCard = ({ 
+// Project Card Component for reusability
+const ProjectCard: React.FC<ProjectCardProps> = ({ 
   title, 
   description, 
   imgSrc, 
   githubUrl, 
   docsUrl, 
   externalUrl 
-}: { 
-  title: string; 
-  description: string; 
-  imgSrc: string;
-  githubUrl?: string;
-  docsUrl?: string;
-  externalUrl?: string;
 }) => {
   return (
-    <div className="relative flex flex-col md:flex-row w-full h-[500] rounded-3xl bg-white p-6 md:p-10 text-start shadow-lg">
+    <div className="relative flex flex-col md:flex-row w-full h-[500px] rounded-3xl bg-white p-6 md:p-10 text-start shadow-lg">
       {/* Left: Text Content */}
       <div className="flex flex-col w-full md:w-1/2 items-start justify-center z-10 pr-16">
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-black">{title}</h1>
@@ -54,7 +71,7 @@ const ProjectCard = ({
           githubUrl={githubUrl} 
           docsUrl={docsUrl} 
           externalUrl={externalUrl} 
-          size={6} 
+          size={24} 
           color="text-gray-800" 
         />
       </div>
@@ -66,7 +83,6 @@ const ProjectCard = ({
     </div>
   );
 };
-
 
 const Projects: React.FC = () => {
   return (
@@ -115,7 +131,6 @@ const Projects: React.FC = () => {
             githubUrl="https://github.com/Lorraine-Sanares/travellex"
             externalUrl="https://public.tableau.com/app/profile/lorraine.sanares/viz/Travellex/Besttime"
           />
-
         </div>
       </div>
     </section>
@@ -123,4 +138,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-
