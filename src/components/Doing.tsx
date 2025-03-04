@@ -16,7 +16,7 @@ const Doing: React.FC = () => {
             {/* Cards Container */} 
             <div className="flex flex-row items-start justify-center w-full gap-10">
                 {/* Study Card */}
-                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white 
+                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white 
                                 p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 
                                 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
@@ -49,7 +49,7 @@ const Doing: React.FC = () => {
                 </div>
 
                 {/* Coding Card */}
-                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
                         MY VISION<br />
@@ -80,7 +80,7 @@ const Doing: React.FC = () => {
 
                 
                 {/* Writing Card */}
-                <div className="relative flex flex-col w-1/3 h-[530] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
+                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
                     {/* Title at the Top Right */}
                     <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
                         MY PURPOSE<br />
