@@ -80,8 +80,6 @@ const TechStack: React.FC = () => {
 
                 <div className="flex flex-col items-start justify-start w-1/2 h-full">
                     <ul className="list-disc list-inside">
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
                         <li>Scikit-Learn</li>
                         <li>Pandas</li>
                         <li>NumPy</li>
