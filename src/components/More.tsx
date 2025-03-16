@@ -52,8 +52,9 @@ const More: React.FC = () => {
                         <div className="text-4xl sm:text-2xl font-bold text-black">Women in Tech</div>
                         <p className="text-lg sm:text-md text-black mb-6 text-left">
                             I love learning and teaching. My role as Education
-                            Director for WIT Unimelb allows me to combine the two passions as I 
-                            strive to create impactful learning experiences for students.<br />
+                            Director for WIT Unimelb allows me to combine the two passions - 
+                            creating impactful learning experiences for students whilst learning
+                            from industry professionals.<br />
                             <br />
                             Check out some of the workshops I run!
                         </p>
