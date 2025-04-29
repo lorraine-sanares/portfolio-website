@@ -36,8 +36,8 @@ const Experience: React.FC = () => {
     }, []);
 
     return (
-        <section className="relative w-full h-auto text-white">
-            <div className="flex flex-row items-start justify-center w-full h-auto">
+        <section className="relative w-full text-white">
+            <div className="flex flex-row items-start justify-center w-full">
                 
                 {/* Left Column - Heading & Image */}
                 <div className="relative flex flex-col items-start justify-start w-1/3 h-screen pt-10 pl-20 sticky top-0">
@@ -94,6 +94,7 @@ const Experience: React.FC = () => {
                                             <li>Documented and refined data ingestion processes using Microsoft Word, ensuring clear procedural guidelines for the team.</li>
                                         </ul>
                                     ),
+                                    colorFrom: "blue-500",
                                 },
                                 {
                                     title: "Private Piano Teacher",
@@ -105,6 +106,7 @@ const Experience: React.FC = () => {
                                             <li>Prepared student for recitals and AMEB exams, whilst maintaining regular communication with parent to manage expectations and outcomes.</li>
                                         </ul>
                                     ),
+                                    colorFrom: "purple-500",
                                 },
                                 {
                                     title: "Teaching Assistant At Kumon",
@@ -117,6 +119,7 @@ const Experience: React.FC = () => {
                                             <li>Responded to parent inquiries regarding student homework, providing clarifications and progress updates.</li>
                                         </ul>
                                     ),
+                                    colorFrom: "blue-500",
                                 },
                                 {
                                     title: "Private Maths Tutor",
@@ -128,18 +131,25 @@ const Experience: React.FC = () => {
                                             <li>Monitored the student&apos;s progress in collaboration with their math teacher, successfully improving their grades by at least 2% in each school assessment.</li>
                                         </ul>
                                     ),
+                                    colorFrom: "purple-500",
                                 },
-                            ].map((job, index) => (
-                                <div
-                                    key={index}
-                                    ref={cardRefs.current[index]}
-                                    className="flex flex-col w-[700px] h-auto rounded-3xl bg-white p-10 text-start bg-opacity-80 backdrop-blur-md shadow-lg"
-                                >
-                                    <div className="text-3xl font-bold text-black">{job.title}</div>
-                                    <p className="text-lg sm:text-xl text-black mb-6 text-left">{job.date}</p>
-                                    <p className="text-lg sm:text-m text-black mb-6 text-left">{job.description}</p>
-                                </div>
-                            ))}
+                            ].map((job, index) => {
+                                return (
+                                    <div
+                                        key={index}
+                                        ref={cardRefs.current[index]}
+                                        className="relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-blue-500/10 transition duration-300 ease-in-out h-full flex flex-col mb-4 w-[700px] overflow-hidden"
+                                        style={{ marginLeft: '40px' }}
+                                    >
+                                        <div className="flex flex-col gap-2 p-8">
+                                            <h3 className="font-semibold text-2xl mb-2 text-white text-left">{job.title}</h3>
+                                            <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-2 shadow-[0_0_16px_4px_rgba(59,130,246,0.3)]"></div>
+                                            <p className="text-lg sm:text-xl text-zinc-200 mb-2 text-left">{job.date}</p>
+                                            <div className="mb-2 text-left text-zinc-300">{job.description}</div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

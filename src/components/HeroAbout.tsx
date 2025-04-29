@@ -9,29 +9,26 @@ const Hero: React.FC = () => {
                 backgroundSize: "210%",
                 backgroundPosition: "45% 48%",
             }}
-            className="relative w-full min-h-[150vh] bg-norepeat text-white"
+            className="relative w-full min-h-[100vh] sm:min-h-[150vh] bg-norepeat text-white"
         >
             {/* Hero Content */}
-            <div className="flex flex-row items-center justify-start w-full h-screen p-20">  
+            <div className="flex flex-col sm:flex-row items-center justify-start w-full h-screen p-4 sm:p-20">  
                 {/* Text Container */}
-                <div className="flex flex-col items-start justify-start w-1/2 h-auto px-14 -mt-40">  
+                <div className="flex flex-col items-start justify-start w-full sm:w-1/2 h-auto px-4 sm:px-14 -mt-20 sm:-mt-40">  
                     {/* Heading */}
-                    <h2 className="text-4xl sm:text-6xl font-extrabold mb-4 text-left">
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-left">
                         Hi there!👋
                     </h2>
                     {/* Subheading */}
-                    <p className="text-sm sm:text-lg text-gray-400 mb-6 text-left">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 text-left">
                         I&apos;m Lorraine Sanares. I&apos;m a data science student, educator, 
                         and someone who likes to build cool projects. Curious about my work? <br />
                         <br /> Let&apos;s get started! 
                     </p>
                 </div>
 
-                {/* Spacer */}
-                <div className="container w-1/6"></div>
-
-                {/* Photo container */}
-                <div className="relative w-[350px] h-[350px] rounded-full bg-white backdrop-blur-md overflow-hidden bg-opacity-75 -mt-60">
+                {/* Photo container
+                <div className="relative w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] rounded-full bg-white backdrop-blur-md overflow-hidden bg-opacity-75 -mt-20 sm:-mt-60">
                     <Image 
                         src="/assets/id.png" 
                         alt="profile" 
@@ -39,16 +36,16 @@ const Hero: React.FC = () => {
                         style={{ objectFit: "contain" }} 
                         className="absolute top-0 left-0"
                     />
-                </div>
+                </div> */}
             </div>
 
             {/* About Content */}
-            <div className="flex flex-col items-center justify-center mb-8 -mt-40 p-28">
+            <div className="flex flex-col items-center justify-center mb-8 -mt-40 p-4 sm:p-28">
                 {/* About Card */}
-                <div className="flex flex-row w-full h-[800px] rounded-3xl bg-white p-16 text-start bg-opacity-80 backdrop-blur-md">
+                <div className="flex flex-col sm:flex-row w-full h-auto sm:h-[800px] rounded-3xl bg-white p-4 sm:p-16 text-start bg-opacity-80 backdrop-blur-md">
                     
                     {/* Image Container */}
-                    <div className="relative w-full h-full overflow-hidden rounded-3xl">
+                    <div className="relative w-full h-[300px] sm:h-full overflow-hidden rounded-3xl">
                         <Image 
                             src="/assets/sideprofile.jpg" 
                             alt="profile" 
@@ -59,12 +56,12 @@ const Hero: React.FC = () => {
                     </div> 
 
                     {/* Divider */}
-                    <div className="border-l border-black h-full mx-12"></div>
+                    <div className="border-t sm:border-l border-black w-full sm:w-0 h-0 sm:h-full my-4 sm:my-0 mx-0 sm:mx-12"></div>
 
                     {/* Content Container */}
                     <div className="flex flex-col justify-start items-start w-full h-full">
                         {/* Heading */}
-                        <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 text-black">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-black">
                             About
                         </h1>
 
@@ -92,16 +89,7 @@ const Hero: React.FC = () => {
                             students, I struggled to bridge the gap between theory and 
                             practice—spending hours on formula proofs and debugging 
                             algorithms, unsure of the practical applications to real-world 
-                            challenges.<br />
-                            <br />
-
-                            However, through hands-on projects and an internship, my pathway 
-                            became clear: to become an adaptable data scientist who is 
-                            equally skilled in computer science, mathematics, and business 
-                            expertise. <br />
-                            <br />
-                            
-                            A unicorn.
+                            challenges.
                         </p>
                     </div>
                 </div>

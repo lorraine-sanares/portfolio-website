@@ -6,16 +6,26 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #14171F;
+  --foreground: #060C14;
+  --accent-primary: #4c7894;
+  --accent-secondary: #dd7bbb;
+  --accent-tertiary: #5a922c;
+  --accent-quaternary: #d79f1e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #14171F;
-    --foreground: #ededed;
+    --background: #060C14;
+    --foreground: #ffffff;
   }
 }
-
 
 /* @layer base {
   body {
@@ -27,9 +37,9 @@
 } */
 
 body {
+  background: var(--background);
   color: var(--foreground);
-  background: var(--background); 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
 .navbar {
@@ -44,7 +54,47 @@ html {
   scroll-behavior: smooth;
 }
 
-
 * {
   cursor: url('/assets/cursor.png'), auto;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060C14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2738;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3e50;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Improved section spacing */
+section {
+  position: relative;
+  overflow: hidden;
 }

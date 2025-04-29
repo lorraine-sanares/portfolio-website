@@ -1,146 +1,82 @@
+"use client";
+
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
+import { motion } from "framer-motion";
 // import { FaLinkedin, FaTwitter, FaMedium, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
+
+interface DriveCardProps {
+  title: string;
+  image: string;
+  imageAlt: string;
+  description: string;
+  delay?: number;
+}
+
+const GlowingLine: React.FC = () => (
+  <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mx-auto mb-4 shadow-[0_0_16px_4px_rgba(59,130,246,0.3)]"></div>
+);
+
+const DriveCard: React.FC<DriveCardProps> = ({ title, image, imageAlt, description, delay = 0 }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay }}
+    viewport={{ once: true }}
+    whileHover={{ y: -5, transition: { duration: 0.2 } }}
+    className="relative p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-blue-500/10 transition duration-300 ease-in-out h-full flex flex-col items-center"
+  >
+    <div className="flex justify-center items-center mb-6">
+      <Image src={image} alt={imageAlt} width={120} height={120} style={{ objectFit: "contain" }} className="rounded-lg" />
+    </div>
+    <h3 className="font-semibold text-2xl mb-2 text-white text-center">{title}</h3>
+    <GlowingLine />
+    <p className="text-zinc-300 text-center text-base mb-2">{description}</p>
+  </motion.div>
+);
 
 const Doing: React.FC = () => {
     return (
-        <div className="flex flex-col items-start justify-start w-full h-auto p-28">  
-            
-            
-            
-            {/* Heading */}
-            <h2 className="text-6xl sm:text-4xl font-extrabold mb-4 text-white">
+    <section className="bg-[#060C14] py-24 md:py-36 px-2 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent"></div>
+      <div className="absolute -right-20 top-1/3 w-40 h-40 rounded-full bg-blue-500/5 blur-3xl"></div>
+      <div className="absolute -left-20 bottom-1/3 w-40 h-40 rounded-full bg-purple-500/5 blur-3xl"></div>
+      <div className="max-w-6xl mx-auto">
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-white via-blue-300 to-white bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
                     What drives me
-            </h2>
-            <div className="container h-10"></div>
-            {/* Cards Container */} 
-            <div className="flex flex-row items-start justify-center w-full gap-10">
-                {/* Study Card */}
-                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white 
-                                p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 
-                                hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
-                    {/* Title at the Top Right */}
-                    <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        MY MISSION<br />
-                    </div>
-
-                    <div className="container"></div>
-
-                    {/* Image in the Center */}
-                    <div className="flex justify-center items-center pt-1">
-                        <Image 
-                            src="/assets/book.png" 
-                            alt="Overlay" 
-                            width={300} 
-                            height={100} 
-                            style={{ objectFit: "contain" }} 
-                            className="rounded-lg"
-                        />
-                    </div>
-
-                    {/* Text Paragraph Below the Image */}
-                    <p className="text-s sm:text-s text-black mb-4 text-left leading-tight">
-                        I dedicate my time to continuous learning and upskilling—exploring 
-                        frameworks and technologies beyond coursework. 
-                        I want to want to deepen my expertise 
-                        and apply knowledge in real-world contexts—whether through hands-on 
-                        projects, certifications, or self-driven exploration.
-                    </p>
-                </div>
-
-                {/* Coding Card */}
-                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-4 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
-                    {/* Title at the Top Right */}
-                    <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        MY VISION<br />
-                    </div>
-
-                    <div className="container"></div>
-
-                    {/* Image in the Center */}
-                    <div className="flex justify-center items-center pt-14">
-                        <Image 
-                            src="/assets/king.png" 
-                            alt="Overlay" 
-                            width={100} 
-                            height={100} 
-                            style={{ objectFit: "contain" }} 
-                            className="rounded-lg rotate-[25deg]"
-                        />
-                    </div>
-
-                    {/* Text Paragraph Below the Image */}
-                    <p className="text-s sm:text-s text-black pt-4 mb-4 text-left leading-tight">
-                        Pursuing a future where I have agency to express my authentic self
-                        in my work; finding that perfect blend between what I love, what I&apos;m
-                        good at, what the world needs, and what I can be paid for - my ikigai. 
-                    </p>
-
-                </div>
-
-                
-                {/* Writing Card */}
-                <div className="relative flex flex-col w-1/3 h-[530px] rounded-3xl bg-white p-6 bg-opacity-80 backdrop-blur-md overflow-hidden gap-6 hover:bg-[#C0CAFF] transition-transform duration-300 hover:scale-105">
-                    {/* Title at the Top Right */}
-                    <div className="absolute top-6 right-6 text-4xl sm:text-2xl pb-6 font-bold text-black text-right">
-                        MY PURPOSE<br />
-                    </div>
-
-                    <div className="container"></div>
-
-                    {/* Image in the Center */}
-                    <div className="flex justify-center items-center pt-14">
-                        <Image 
-                            src="/assets/pen.png" 
-                            alt="Overlay" 
-                            width={180} 
-                            height={100} 
-                            style={{ objectFit: "contain" }} 
-                            className="rounded-lg"
-                        />
-                    </div>
-
-                    {/* Text Paragraph Below the Image */}
-                    <p className="text-s sm:text-s text-black pt-7 mb-4 text-left leading-tight">
-                        Shared knowledge is the foundation of growth, innovation, and collective 
-                        success - I&apos;ve had a long-time passion for teaching, therefore I try my best
-                        to pass on what I learn through writing, workshops, or everyday conversation. 
-                        I aim to foster curiosity and inspire others to push their own boundaries, 
-                        as I do mine.
-                    </p>
-
-                    {/* Button to Medium Profile */}
-                    {/* <a 
-                        href="https://medium.com/@yourprofile" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="mt-auto self-start bg-black text-white text-md font-semibold px-4 py-2 rounded-xl hover:bg-gray-800 transition-all duration-300"
-                    >
-                        Check Out My Writing
-                    </a> */}
-                </div>               
-            </div>
-
-            {/* Row of favicons */}
-            {/* <div className="w-full mt-10 text-start">
-                
-
-                <div className="flex w-full justify-evenly gap-6 mt-4">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className="text-white text-[100px] hover:text-blue-500 transition duration-300" />
-                    </a>
-
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className="text-white text-[100px] hover:text-gray-300 transition duration-300" />
-                    </a>
-                    <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
-                        <FaMedium className="text-white text-[100px] hover:text-gray-400 transition duration-300" />
-                    </a>
-
-                </div>
-            </div> */}
-
+        </motion.h2>
+        <div className="grid md:grid-cols-3 gap-8 px-2 max-w-5xl mx-auto">
+          <DriveCard
+            title="MY MISSION"
+            image="/assets/book.png"
+            imageAlt="Book"
+            description="I dedicate my time to continuous learning and upskilling—exploring frameworks and technologies beyond coursework. I want to deepen my expertise and apply knowledge in real-world contexts—whether through hands-on projects, certifications, or self-driven exploration."
+            delay={0.1}
+          />
+          <DriveCard
+            title="MY VISION"
+            image="/assets/king.png"
+            imageAlt="King"
+            description="Pursuing a future where I have agency to express my authentic self in my work; finding that perfect blend between what I love, what I'm good at, what the world needs, and what I can be paid for - my ikigai."
+            delay={0.2}
+          />
+          <DriveCard
+            title="MY PURPOSE"
+            image="/assets/pen.png"
+            imageAlt="Pen"
+            description="Shared knowledge is the foundation of growth, innovation, and collective success - I've had a long-time passion for teaching, therefore I try my best to pass on what I learn through writing, workshops, or everyday conversation. I aim to foster curiosity and inspire others to push their own boundaries, as I do mine."
+            delay={0.3}
+          />
         </div>
+      </div>
+    </section>
     );
 };
+
 export default Doing;

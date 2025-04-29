@@ -60,10 +60,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   externalUrl 
 }) => {
   return (
-    <div className="relative flex flex-col md:flex-row w-full h-[500px] rounded-3xl bg-white p-6 md:p-10 text-start shadow-lg">
+    <div className="relative flex flex-col md:flex-row w-full h-auto md:h-[500px] rounded-3xl bg-white p-4 md:p-10 text-start shadow-lg">
       {/* Left: Text Content */}
-      <div className="flex flex-col w-full md:w-1/2 items-start justify-center z-10 pr-16">
-        <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-black">{title}</h1>
+      <div className="flex flex-col w-full md:w-1/2 items-start justify-center z-10 pr-0 md:pr-16">
+        <h1 className="text-2xl md:text-4xl font-extrabold mb-4 text-black">{title}</h1>
         <p className="text-sm md:text-base text-black mb-6">{description}</p>
 
         {/* Social Icons with Custom Links */}
@@ -77,8 +77,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Right: Image */}
-      <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden z-0">
-        <Image src={imgSrc} alt={title} fill className="object-cover rounded-r-3xl" />
+      <div className="relative md:absolute top-0 right-0 w-full md:w-1/2 h-[300px] md:h-full overflow-hidden z-0 mt-4 md:mt-0">
+        <Image src={imgSrc} alt={title} fill className="object-cover rounded-3xl md:rounded-r-3xl" />
       </div>
     </div>
   );
@@ -88,20 +88,20 @@ const Projects: React.FC = () => {
   return (
     <section className="relative w-full h-auto text-white">
       {/* Main Content Container */}
-      <div className="flex flex-col items-start text-left w-full h-auto px-10 md:px-28 py-10 gap-8">
+      <div className="flex flex-col items-start text-left w-full h-auto px-4 md:px-10 lg:px-28 py-10 gap-8">
        {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold text-white">
           Projects
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm md:text-lg text-white">
+        <p className="text-sm md:text-base lg:text-lg text-white">
           This website you&apos;re on now is something I coded from scratch! 
           But here are other projects I&apos;ve done:
         </p>
 
         {/* Projects Grid */}
-        <div className="flex flex-col items-start w-full gap-16">
+        <div className="flex flex-col items-start w-full gap-8 md:gap-16">
         
           {/* Project Cards */}
           <ProjectCard
