@@ -1,5 +1,6 @@
 
 import Hero from "@/components/HeroAbout";
+import About from "@/components/About";
 import Navbar from "@/components/Navbar";
 import Doing from "@/components/Doing";
 import Experience from "@/components/Experience";
@@ -16,6 +17,10 @@ export default function Page() {
       
       <section id="hero">
         <Hero />
+      </section>
+
+      <section id="about">
+        < About/>
       </section>
 
       <section id="doing">
