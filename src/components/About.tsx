@@ -3,10 +3,13 @@
 
 import React from "react";
 import Image from "next/image";
+import LampDemo from "@/components/lamp-demo";
 
 const About: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center mb-8 mt-20 p-4 sm:p-28 relative z-10">
+            {/* Lamp Demo */}
+            <LampDemo />
             {/* About Card */}
             <div className="flex flex-col sm:flex-row w-full h-auto sm:h-[800px] rounded-3xl bg-white p-4 sm:p-16 text-start bg-opacity-80 backdrop-blur-md">
                 
