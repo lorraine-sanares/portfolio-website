@@ -18,7 +18,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({
   docsUrl, 
   externalUrl, 
   size = 24, 
-  color = "text-black" 
+  color = "text-white" 
 }) => {
   return (
     <div className="flex space-x-4">
@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className={cn(
-      "relative group overflow-hidden rounded-3xl bg-white/10 backdrop-blur-sm p-6 hover:bg-white/20 transition-all duration-300",
+      "relative group overflow-hidden rounded-3xl bg-[#1a1a1a]/50 backdrop-blur-sm p-6 hover:bg-[#1a1a1a]/70 transition-all duration-300",
       className
     )}>
       <div className="relative h-full flex flex-col">
@@ -128,7 +128,7 @@ const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "rounded-2xl group/bento hover:shadow-xl transition duration-300 ease-in-out shadow-input dark:shadow-none p-8 relative bg-white/5 backdrop-blur-xl border border-white/10 hover:shadow-blue-500/10 flex flex-col h-full",
+        "rounded-2xl group/bento hover:shadow-xl transition duration-300 ease-in-out shadow-input dark:shadow-none p-8 relative bg-[#1a1a1a]/50 backdrop-blur-xl border border-white/10 hover:shadow-blue-500/10 flex flex-col h-full",
         span === 2 ? "md:col-span-2" : "",
         className
       )}
