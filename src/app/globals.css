@@ -3,10 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --background: #ffffff;
-  --foreground: #060C14;
+  --background: #060C14;
+  --foreground: #ffffff;
   --accent-primary: #4c7894;
   --accent-secondary: #dd7bbb;
   --accent-tertiary: #5a922c;
@@ -18,13 +17,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #060C14;
-    --foreground: #ffffff;
-  }
 }
 
 /* @layer base {
