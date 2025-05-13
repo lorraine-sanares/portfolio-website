@@ -39,9 +39,9 @@ export default function Page() {
         <Projects />
       </section>
 
-      <section id="datasci">
+      {/* <section id="datasci">
         <Datasci />
-      </section>
+      </section> */}
 
       <section id="more">
         <More />

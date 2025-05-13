@@ -27,7 +27,17 @@ const DriveCard: React.FC<DriveCardProps> = ({ title, image, imageAlt, descripti
     className="relative p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-blue-500/10 transition duration-300 ease-in-out h-full flex flex-col items-center"
   >
     <div className="flex justify-center items-center mb-6">
-      <Image src={image} alt={imageAlt} width={120} height={120} style={{ objectFit: "contain" }} className="rounded-lg" />
+      <Image 
+        src={image} 
+        alt={imageAlt} 
+        width={image.includes('king.png') ? 70 : image.includes('book.png') ? 150 : 120} 
+        height={image.includes('king.png') ? 70 : image.includes('book.png') ? 150 : 120} 
+        style={{ 
+          objectFit: "contain",
+          transform: image.includes('king.png') ? 'rotate(25deg)' : 'none'
+        }} 
+        className="rounded-lg" 
+      />
     </div>
     <h3 className="font-semibold text-2xl mb-2 text-white text-center">{title}</h3>
     <GlowingLine />
@@ -49,7 +59,7 @@ const Doing: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-                    What drives me
+                    Values
         </motion.h2>
         <div className="grid md:grid-cols-3 gap-8 px-2 max-w-5xl mx-auto">
           <DriveCard
