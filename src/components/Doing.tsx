@@ -59,25 +59,25 @@ const Doing: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-                    Values
+                    My Ethos
         </motion.h2>
         <div className="grid md:grid-cols-3 gap-8 px-2 max-w-5xl mx-auto">
           <DriveCard
-            title="MY MISSION"
+            title="MISSION"
             image="/assets/book.png"
             imageAlt="Book"
             description="I dedicate my time to continuous learning and upskilling—exploring frameworks and technologies beyond coursework. I want to deepen my expertise and apply knowledge in real-world contexts—whether through hands-on projects, certifications, or self-driven exploration."
             delay={0.1}
           />
           <DriveCard
-            title="MY VISION"
+            title="VISION"
             image="/assets/king.png"
             imageAlt="King"
             description="Pursuing a future where I have agency to express my authentic self in my work; finding that perfect blend between what I love, what I'm good at, what the world needs, and what I can be paid for - my ikigai."
             delay={0.2}
           />
           <DriveCard
-            title="MY PURPOSE"
+            title="PURPOSE"
             image="/assets/pen.png"
             imageAlt="Pen"
             description="Shared knowledge is the foundation of growth, innovation, and collective success - I've had a long-time passion for teaching, therefore I try my best to pass on what I learn through writing, workshops, or everyday conversation. I aim to foster curiosity and inspire others to push their own boundaries, as I do mine."
